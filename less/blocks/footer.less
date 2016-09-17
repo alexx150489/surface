@@ -1,0 +1,145 @@
+.footer__promo {
+	min-height: 569px;
+	background: url(../img/footer-line2-320.png) 26px 207px no-repeat,
+							url(../img/footer-line1-320.png) 154px 172px no-repeat,
+							url(../img/background-footer-320.jpg) 0 0 no-repeat;
+	padding-top: 1px;
+}
+
+.footer__logo {
+	width: 73px;
+	height: 78px;
+	margin: 0 auto;
+	background: @bgc-surface url(../img/surface-logo.svg) 8px 11px no-repeat;
+	background-size: 56px;
+	border-radius: 15px;
+	margin-top: 79px;
+	margin-bottom: 56px;
+}
+
+.footer__title {
+	font-family: @font-bold;
+	font-size: 34px;
+	line-height: 34px;
+	color: @fc-alt;
+	text-transform: uppercase;
+	text-align: center;
+	margin-bottom: 12px;
+}
+
+.footer__subtitle {
+	font-family: @font-bold;
+	font-size: 15px;
+	line-height: 15px;
+	color: #9b8ec1;
+	text-transform: uppercase;
+	text-align: center;
+	margin-bottom: 72px;
+}
+
+.footer__buttons {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 127px;
+}
+
+.footer__button {
+	display: block;
+	width: 142px;
+	height: 41px;
+	background-color: @bgc-surface;
+	border-radius: 26px;
+	padding-top: 1px;
+	margin: 0 5px;
+}
+
+.footer__buttons-wrapper {
+	margin-top: 10px;
+}
+
+.footer__button-apple .footer__buttons-wrapper {
+	padding-left: 44px;
+	position: relative;
+}
+
+.footer__button-apple .footer__buttons-wrapper::before {
+	position: absolute;
+	content: '';
+	width: 15px;
+	height: 17px;
+	top: 0;
+	left: 13px;
+	background: url(../img/sprite.png) -49px -5px no-repeat;
+}
+
+.footer__button-google .footer__buttons-wrapper {
+	position: relative;
+	padding-left: 53px;
+}
+
+.footer__button-google .footer__buttons-wrapper::before {
+	position: absolute;
+	content: '';
+	width: 0;
+	height: 0;
+	top: 0;
+	left: 21px;
+	border-style: solid;
+	border-width: 9px 0 9px 11px;
+	border-color: transparent transparent transparent #fff;
+}
+
+.footer__button-text {
+	font-family: @font-light;
+	font-size: 8px;
+	line-height: 8px;
+	color: @fc-alt;
+	text-transform: uppercase;
+	padding-bottom: 5px;
+}
+
+.footer__button-text.semibold {
+	font-family: @font-semibold;
+}
+
+.footer__social {
+	min-height: 50px;
+	background-color: rgba(10,14,52,.6);
+	padding-top: 1px;
+	
+}
+
+.footer__list {
+	.unstyledlist();
+	font-size: 0;
+	text-align: center;
+	margin-top: 19px;
+}
+
+.footer__list-item {
+	display: inline-block;
+	vertical-align: top;
+	cursor: pointer;
+}
+
+.footer__fb {
+	width: 10px;
+	height: 16px;
+	background: url(../img/sprite.png) -141px -5px no-repeat;
+	margin-right: 41px;
+}
+
+.footer__tw {
+	width: 17px;
+	height: 18px;
+	background: url(../img/sprite.png) -414px -5px no-repeat;
+	margin-right: 38px;
+}
+
+.footer__inst {
+	width: 17px;
+	height: 18px;
+	background: url(../img/sprite.png) -317px -5px no-repeat;
+}
+
+
