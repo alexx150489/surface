@@ -2,133 +2,262 @@
 	min-height: 568px;
 	background: url("../img/promo-line320.png") 76px 167px no-repeat, url("../img/background-320.jpg") 0 0 no-repeat;
 	padding-top: 1px;
+}
+	
+.promo__logo {
+	position: relative;
+	font-family: @font-bold;
+	font-size: 28px;
+	line-height: 28px;
+	color: @fc-alt;
+	text-transform: uppercase;
+	text-align: center;
+	padding-left: 31px;
+	margin: 39px 0 140px 0;
+	&::before {
+		position: absolute;
+		content: '';
+		width: 26px;
+		height: 25px;
+		background: url("../img/surface-logo.svg") 0 0 no-repeat;
+		background-size: 26px;
+		left: 80px;
+	}
+}
+
+.promo__description {
+	display: none;
+}
+
+.promo__title {
+	font-family: @font-bold;
+	font-size: 32px;
+	line-height: 32px;
+	color: @fc-alt;
+	text-transform: uppercase;
+}
+
+.promo__title.first {
+	margin: 0 0 29px 10px;
+}
+
+.promo__title.second {
+	margin: 0 0 94px 67px;
+}
+
+.promo__buttons {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 44px;
+}
+
+.promo__button {
+	display: block;
+	width: 142px;
+	height: 41px;
+	background-color: @bgc-surface;
+	border-radius: 26px;
+	padding-top: 1px;
+	margin: 0 5px;
+}
+
+.promo__buttons-wrapper {
+	margin-top: 10px;
+}
+
+.promo__button-apple .promo__buttons-wrapper {
+	padding-left: 44px;
+	position: relative;
+}
+
+.promo__button-apple .promo__buttons-wrapper::before {
+	position: absolute;
+	content: '';
+	width: 15px;
+	height: 17px;
+	top: 0;
+	left: 13px;
+	background: url(../img/sprite.png) -49px -5px no-repeat;
+}
+
+.promo__button-google .promo__buttons-wrapper {
+	position: relative;
+	padding-left: 53px;
+}
+
+.promo__button-google .promo__buttons-wrapper::before {
+	position: absolute;
+	content: '';
+	width: 0;
+	height: 0;
+	top: 0;
+	left: 21px;
+	border-style: solid;
+	border-width: 9px 0 9px 11px;
+	border-color: transparent transparent transparent #fff;
+}
+
+.promo__button-text {
+	font-family: @font-light;
+	font-size: 8px;
+	line-height: 8px;
+	color: @fc-alt;
+	text-transform: uppercase;
+	padding-bottom: 5px;
+}
+
+.promo__button-text.semibold {
+	font-family: @font-semibold;
+}
+
+.promo__menu-list {
+	.unstyledlist();
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	font-family: @font-light;
+	font-size: 12px;
+	line-height: 12px;
+	text-transform: uppercase;
+}
+
+.promo__menu-item {
+	margin: 0 32px 10px 0;
+}
+
+.promo__menu-item.baseball {
+	margin-right: 0;
+}
+
+.promo__menu-item.soccer {
+	margin-left: 28px;
+}
+
+.promo__menu-link {
+	color: @fc-surface;
+}
+
+
+
+@media @tablet-width { 
+	.promo {
+		min-height: 959px;
+		background: url("../img/promo-line768.png") 254px 242px no-repeat, url("../img/background-768.jpg") 0 0 no-repeat;
+		padding-top: 1px;
+	}
+	
+	.promo__wrapper-logo {
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 200px;
+	}
 	
 	.promo__logo {
-		position: relative;
-		font-family: @font-bold;
-		font-size: 28px;
-		line-height: 28px;
+		font-size: 35px;
+		
+		background-size: 32px;
+		padding: 0;
+		margin: 56px 0 0 60px;
+		&::before {
+			width: 32px;
+			height: 32px;
+			left: -35px;
+			top: -2px;
+			background-size: 32px;
+		}
+	}
+	
+	.promo__description {
+		display: block;
+		font-family: @font-light;
+		font-size: 14px;
+		line-height: 14px;
 		color: @fc-alt;
 		text-transform: uppercase;
-		text-align: center;
-		padding-left: 31px;
-		margin-top: 39px;
-		margin-bottom: 140px;
-		&::before {
-			position: absolute;
-			content: '';
-			width: 26px;
-			height: 25px;
-			background: url("../img/surface-logo.svg") 0 0 no-repeat;
-			background-size: 26px;
-			left: 80px;
-		}
+		margin: 56px 20px 0 0;
 	}
 	
 	.promo__title {
 		font-family: @font-bold;
-		font-size: 32px;
-		line-height: 32px;
+		font-size: 64px;
+		line-height: 64px;
 		color: @fc-alt;
 		text-transform: uppercase;
 	}
 	
 	.promo__title.first {
-		margin-left: 10px;
-		margin-bottom: 29px;
+		margin: 0 0 35px 90px;
 	}
+
 	.promo__title.second {
-		margin-left: 67px;
-		margin-bottom: 94px;
+		margin: 0 0 94px 200px;
 	}
 	
-	.promo__buttons {
+	.promo__wrapper-order {
 		display: flex;
-		justify-content: center;
-		margin-bottom: 44px;
+		flex-direction: column;
+	}
+	
+	.promo__main-menu {
+		order: -1;
+		margin-bottom: 117px;
+	}
+	
+	.promo__menu-list {
+		justify-content: space-around;
+		font-size: 16px;
+	}
+	
+	.promo__menu-item {
+		margin: 0;
+	}
+	
+	.promo__menu-item.soccer {
+		margin: 0;
 	}
 	
 	.promo__button {
 		display: block;
-		width: 142px;
-		height: 41px;
+		width: 311px;
+		height: 77px;
 		background-color: @bgc-surface;
-		border-radius: 26px;
+		border-radius: 38px;
 		padding-top: 1px;
-		margin: 0 5px;
-	}
-	
-	.promo__buttons-wrapper {
-		margin-top: 10px;
-	}
-	
-	.promo__button-apple .promo__buttons-wrapper {
-		padding-left: 44px;
-		position: relative;
-	}
-	
-	.promo__button-apple .promo__buttons-wrapper::before {
-		position: absolute;
-		content: '';
-		width: 15px;
-		height: 17px;
-		top: 0;
-		left: 13px;
-		background: url(../img/sprite.png) -49px -5px no-repeat;
-	}
-	
-	.promo__button-google .promo__buttons-wrapper {
-		position: relative;
-		padding-left: 53px;
-	}
-	
-	.promo__button-google .promo__buttons-wrapper::before {
-		position: absolute;
-		content: '';
-		width: 0;
-		height: 0;
-		top: 0;
-		left: 21px;
-		border-style: solid;
-		border-width: 9px 0 9px 11px;
-		border-color: transparent transparent transparent #fff;
+		margin: 0 15px;
 	}
 	
 	.promo__button-text {
-		font-family: @font-light;
-		font-size: 8px;
-		line-height: 8px;
-		color: @fc-alt;
-		text-transform: uppercase;
+		font-size: 14px;
+		line-height: 14px;
 		padding-bottom: 5px;
 	}
-		
-	.promo__button-text.semibold {
-		font-family: @font-semibold;
+	
+	.promo__button-apple .promo__buttons-wrapper {
+		padding-left: 98px;
+		margin-top: 21px;
 	}
 	
-	.promo__menu-list {
-		.unstyledlist();
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: center;
-		font-family: @font-light;
-		font-size: 12px;
-		line-height: 12px;
-		text-transform: uppercase;
+	.promo__button-apple .promo__buttons-wrapper::before {
+		width: 33px;
+		height: 39px;
+		top: -5px;
+		left: 30px;
+		background: url(../img/sprite.png) -74px -5px no-repeat;
 	}
 	
-	.promo__menu-item {
-		margin-right: 32px;
-		margin-bottom: 10px;
+	.promo__button-google .promo__buttons-wrapper {
+		padding-left: 98px;
+		margin-top: 21px;
 	}
 	
-	.promo__menu-item:nth-child(3) {
-		margin-right: 0;
-	}
-	
-	.promo__menu-link {
-		color: @fc-surface;
+	.promo__button-google .promo__buttons-wrapper::before {
+		width: 0;
+		height: 0;
+		border-style: solid;
+		border-width: 20px 0 20px 20px;
+		border-color: transparent transparent transparent #fff;
+		top: -3px;
+		left: 43px;
 	}
 }
 

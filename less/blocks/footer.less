@@ -3,7 +3,7 @@
 	background: url(../img/footer-line2-320.png) 26px 207px no-repeat,
 							url(../img/footer-line1-320.png) 154px 172px no-repeat,
 							url(../img/background-footer-320.jpg) 0 0 no-repeat;
-	padding-top: 1px;
+	border-top: 1px solid #07163f;
 }
 
 .footer__logo {
@@ -142,4 +142,112 @@
 	background: url(../img/sprite.png) -317px -5px no-repeat;
 }
 
+@media @tablet-width {
+	.footer__promo {
+		min-height: 959px;
+		background: url(../img/footer-line2-768.png) 93px 232px no-repeat,
+			url(../img/footer-line1-768.png) 340px 188px no-repeat,
+			url(../img/background-footer-768.jpg) 0 0 no-repeat;
+	}
+	
+	.footer__logo {
+		width: 130px;
+		height: 137px;
+		margin: 0 auto;
+		background: @bgc-surface url(../img/surface-logo.svg) 13px 21px no-repeat;
+		background-size: 100px;
+		border-radius: 15px;
+		margin-top: 79px;
+		margin-bottom: 56px;
+	}
+	
+	.footer__title {
+		font-size: 80px;
+		line-height: 80px;
+		margin-bottom: 32px;
+	}
+
+	.footer__subtitle {
+		font-size: 36px;
+		line-height: 36px;
+		color: #9b8ec1;
+		margin-bottom: 199px;
+	}
+	
+	.footer__buttons {
+		margin-bottom: 169px;
+	}
+	
+	.footer__button {
+		display: block;
+		width: 311px;
+		height: 77px;
+		background-color: @bgc-surface;
+		border-radius: 38px;
+		padding-top: 1px;
+		margin: 0 15px;
+	}
+
+	.footer__button-text {
+		font-size: 14px;
+		line-height: 14px;
+		padding-bottom: 5px;
+	}
+
+	.footer__button-apple .footer__buttons-wrapper {
+		padding-left: 98px;
+		margin-top: 21px;
+	}
+
+	.footer__button-apple .footer__buttons-wrapper::before {
+		width: 33px;
+		height: 39px;
+		top: -5px;
+		left: 30px;
+		background: url(../img/sprite.png) -74px -5px no-repeat;
+	}
+
+	.footer__button-google .footer__buttons-wrapper {
+		padding-left: 98px;
+		margin-top: 21px;
+	}
+
+	.footer__button-google .footer__buttons-wrapper::before {
+		width: 0;
+		height: 0;
+		border-style: solid;
+		border-width: 20px 0 20px 20px;
+		border-color: transparent transparent transparent #fff;
+		top: -3px;
+		left: 43px;
+	}
+	
+	.footer__social {
+		min-height: 92px;
+	}
+	
+	.footer__list {
+		margin-top: 37px;
+	}
+	
+	.footer__fb {
+		width: 19px;
+		height: 25px;
+		background: url(../img/sprite.png) -161px -5px no-repeat;
+		margin-right: 41px;
+	}
+
+	.footer__tw {
+		width: 27px;
+		height: 25px;
+		background: url(../img/sprite.png) -441px -5px no-repeat;
+		margin-right: 38px;
+	}
+
+	.footer__inst {
+		width: 23px;
+		height: 23px;
+		background: url(../img/sprite.png) -344px -5px no-repeat;
+	}
+}
 

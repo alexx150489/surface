@@ -1,5 +1,6 @@
 .features__items {
 	padding-top: 1px;
+	
 }
 
 .features__items-wrapper {
@@ -147,4 +148,179 @@
 	background-color: @fc-surface;
 }
 
+@media @tablet-width { 
+	
+	.features__items-wrapper {
+		padding-bottom: 0;
+		border-bottom: 1px solid @bgc-surface;
+	}
+	
+	.features__item {
+		display: block;
+		margin: 0;
+		padding-bottom: 1px;
+		padding-top: 1px;
+	}
+	
+	.features__athlets {
+		position: relative;
+		background: url(../img/cross.png) 66px 86px no-repeat,
+			url(../img/cross-opacity.png) 45px 69px no-repeat, 
+			url(../img/player1-line320.png) -83px 150px no-repeat;
+		&::before {
+			width: 335px;
+			height: 699px;
+			top: 91px;
+			left: 0;
+			background: url(../img/player1-768.png) 0 0 no-repeat;
+			z-index: 10;
+		}
+		&::after {
+			position: absolute;
+			content: '';
+			width: 253px;
+			height: 317px;
+			top: 105px;
+			left: 0px;
+			background: url(../img/promo-line768.png) 0 0 no-repeat;
+		}
+	}
+	
+	.features__players {
+		position: relative;
+		background: url(../img/cross.png) 545px 129px no-repeat,
+			url(../img/cross-opacity.png) 520px 113px no-repeat,
+			url(../img/player2-line320-1.png) 620px 151px no-repeat; 
+		&::before {
+			position: absolute;
+			content: '';
+			width: 436px;
+			height: 565px;
+			top: 46px;
+			left: 330px;
+			background: url(../img/player2-768.png) 0 0 no-repeat;
+		}
+		&::after {
+			position: absolute;
+			content: '';
+			width: 253px;
+			height: 317px;
+			top: 187px;
+			left: 498px;
+			background: url(../img/promo-line768.png) 0 0 no-repeat;
+		}
+	}
+	
+	.features__title {
+		font-family: @font-bold;
+		font-size: 90px;
+		line-height: 90px;
+		color: @fc-title;
+		text-transform: uppercase;
+		margin-top: 83px;
+		
+	}
+	
+	.features__athlets .features__title  {
+		padding-left: 292px;
+	}
+	
+	.features__players .features__title  {
+		padding-left: 40px;
+	}
+	
+	.features__athlets .features__title {
+		margin-bottom: 60px;
+	}
+	
+	.features__players .features__title {
+		margin-bottom: 60px;
+	}
+
+	.features__controls {
+		display: none;
+	}
+	
+	.features__items-wrapper {
+		background-color: @bgc-base;
+	}
+	
+	.features__item.second {
+		background-color: @bgc-alt;
+	}
+	
+	.features__item.third {
+		background-color: @bgc-surface;
+	}
+	
+	.features__players .features__item.third {
+		background-color: #090c35;
+	}
+			
+	.features__item-title {
+		font-size: 36px;
+		line-height: 36px;
+		margin: 40px 0 32px 0;
+	}
+		
+	.features__athlets .features__item-title {
+		padding-left: 290px;
+	}
+	
+	.features__players .features__item-title {
+		padding-left: 33px;
+	}
+	
+	.features__item-text {
+		font-family: @font;
+		font-size: 18px;
+		line-height: 18px;
+		color: @fc-base;
+		font-weight: 700;
+	}
+	
+	.features__athlets .features__item-text {
+		padding-left: 290px;
+	}
+	
+	.features__players .features__item-text {
+		padding: 0 373px 0 33px;
+	}
+	
+	.features__item.first .features__item-text {
+		margin-bottom: 40px;
+	}
+	
+	.features__item.second .features__item-text {
+		margin-bottom: 40px;
+	}
+	
+	.features__item.third .features__item-text {
+		margin-bottom: 40px;
+	}
+	
+	.features__number {
+		font-size: 18px;
+		&::after {
+			width: 22px;
+			height: 4px;
+			top: 25px;
+			left: 0;
+		}
+	}
+	
+	.features__item.third .features__number {
+		&::after {
+			background-color: #efefef;
+		}
+	}
+	
+	.features__number--color {
+		color: @bgc-surface;
+	}
+	
+	.features__item.third .features__item-text {
+		color: @fc-alt;
+	}
+}
 

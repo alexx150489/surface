@@ -10,32 +10,39 @@
 <body>
 	<header class="main-header">
 		<div class="promo">
-			<div class="promo__logo">Surface</div>
-			<h2 class="promo__title first">Be Recruited</h2>
-			<h2 class="promo__title second">Play college sports</h2>
-			<div class="promo__buttons">
-				<a class="promo__button promo__button-apple" href="#">
-					<div class="promo__buttons-wrapper">
-						<div class="promo__button-text">Download on the</div>
-						<div class="promo__button-text semibold">app store</div>
-					</div>
-				</a>
-				<a class="promo__button promo__button-google" href="#">
-					<div class="promo__buttons-wrapper">
-						<div class="promo__button-text">Get it on</div>
-						<div class="promo__button-text semibold">Google play</div>
-					</div>
-				</a>
+			<div class="promo__wrapper-logo">
+				<div class="promo__logo">Surface</div>
+				<div class="promo__description">For athlets and coaches</div>
 			</div>
-			<nav class="promo__main-menu">
-				<ul class="promo__menu-list">
-					<li class="promo__menu-item"><a class="promo__menu-link" href="#">Football</a></li>
-					<li class="promo__menu-item"><a class="promo__menu-link" href="#">Basketball</a></li>
-					<li class="promo__menu-item"><a class="promo__menu-link" href="#">Baseball</a></li>
-					<li class="promo__menu-item soccer"><a class="promo__menu-link" href="#">Soccer</a></li>
-					<li class="promo__menu-item ice-hockey"><a class="promo__menu-link" href="#">Ice hockey</a></li>
-				</ul>
-			</nav>
+			<div class="promo__wrapper-title">
+				<h2 class="promo__title first">Be Recruited</h2>
+				<h2 class="promo__title second">Play college sports</h2>
+			</div>
+			<div class="promo__wrapper-order">
+				<div class="promo__buttons">
+					<a class="promo__button promo__button-apple" href="#">
+						<div class="promo__buttons-wrapper">
+							<div class="promo__button-text">Download on the</div>
+							<div class="promo__button-text semibold">app store</div>
+						</div>
+					</a>
+					<a class="promo__button promo__button-google" href="#">
+						<div class="promo__buttons-wrapper">
+							<div class="promo__button-text">Get it on</div>
+							<div class="promo__button-text semibold">Google play</div>
+						</div>
+					</a>
+				</div>
+				<nav class="promo__main-menu">
+					<ul class="promo__menu-list">
+						<li class="promo__menu-item"><a class="promo__menu-link" href="#">Football</a></li>
+						<li class="promo__menu-item"><a class="promo__menu-link" href="#">Basketball</a></li>
+						<li class="promo__menu-item baseball"><a class="promo__menu-link" href="#">Baseball</a></li>
+						<li class="promo__menu-item soccer"><a class="promo__menu-link" href="#">Soccer</a></li>
+						<li class="promo__menu-item ice-hockey"><a class="promo__menu-link" href="#">Ice hockey</a></li>
+					</ul>
+				</nav>
+			</div>
 		</div>
 	</header>
 	<div class="main-content">
@@ -47,7 +54,7 @@
 						<h3 class="features__item-title"><span class="features__number">01</span>Connection</h3>
 						<p class="features__item-text">Connect with coaches directly, you can ping coaches.</p>
 					</div>
-					<div class="features__item second">
+					<div class="features__item features__item--active second">
 						<h3 class="features__item-title"><span class="features__number">02</span>Collaboration</h3>
 						<p class="features__item-text">Work with other student athletes to  increase visability. When you share and like other players videos it will increase your visability as a player. This is the team work aspect to Surface.</p>
 					</div>
@@ -76,7 +83,7 @@
 						<div class="features__item-text">Work with recruiter to increase your chances of findingtalented athlete.</div>
 					</div>
 					<div class="features__item third">
-						<div class="features__item-title"><span class="features__number">03</span>Growth</div>
+						<div class="features__item-title"><span class="features__number features__number--color">03</span>Growth</div>
 						<div class="features__item-text">Save your time, recruit proper athlets for your team.</div>
 					</div>
 					<div class="features__controls">
@@ -93,15 +100,23 @@
 			<div class="advantages__item advantages__active">
 				<div class="advantages__number">01</div>
 				<div class="advantages__image">
-					<img src="img/foto1-320.jpg" alt="image">
-				</div>
+					<picture>
+						<source media="(min-width: 1200px)" srcset="img/foto1-1920.jpg 1x">
+						<source media="(min-width: 700px)" srcset="img/foto1-768.jpg 1x">
+						<img src="img/foto1-320.jpg" alt="img/foto1-320.jpg">
+					</picture>
+  			</div>
 				<h3 class="advantages__title">Be active</h3>
 				<p class="advantages__text">Post videos with your skills, Like and follow others to be more popular.</p>
 			</div>
 			<div class="advantages__item advantages__contact">
 				<div class="advantages__number">02</div>
 				<div class="advantages__image">
-					<img src="img/foto2-320.jpg" alt="image">
+					<picture>
+						<source media="(min-width: 1200px)" srcset="img/foto2-1920.jpg 1x">
+						<source media="(min-width: 700px)" srcset="img/foto2-768.jpg 1x">
+						<img src="img/foto2-320.jpg" alt="img/foto2-320.jpg">
+					</picture>
 				</div>
 				<h3 class="advantages__title">Find contact</h3>
 				<p class="advantages__text">Contact others to find right coach or athlete you are looking for.</p>
@@ -109,7 +124,11 @@
 			<div class="advantages__item advantages__work">
 				<div class="advantages__number">03</div>
 				<div class="advantages__image">
-					<img src="img/foto3-320.jpg" alt="image">
+					<picture>
+						<source media="(min-width: 1200px)" srcset="img/foto3-1920.jpg 1x">
+						<source media="(min-width: 700px)" srcset="img/foto3-768.jpg 1x">
+						<img src="img/foto3-320.jpg" alt="img/foto3-320.jpg">
+					</picture>
 				</div>
 				<h3 class="advantages__title">Work it</h3>
 				<p class="advantages__text">Enjoy being a student athlete, the recruiting process can be overwhelming, we want to make this a enjoyable experience.</p>
@@ -120,7 +139,7 @@
 				<div class="footer__promo">
 					<div class="footer__logo"></div>
 					<h2 class="footer__title">Download app</h2>
-					<div class="footer__subtitle">Show everyone what yu can do!</div>
+					<div class="footer__subtitle">Show everyone what you can do!</div>
 					<div class="footer__buttons">
 						<a class="footer__button footer__button-apple" href="#">
 							<div class="footer__buttons-wrapper">
