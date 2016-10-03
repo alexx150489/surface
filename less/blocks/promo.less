@@ -52,6 +52,9 @@
 }
 
 .promo__button {
+	&:hover {
+		background-color: @hover-surface;
+	}
 	display: block;
 	width: 142px;
 	height: 41px;
@@ -59,6 +62,7 @@
 	border-radius: 26px;
 	padding-top: 1px;
 	margin: 0 5px;
+	transition-duration: 0.3s;
 }
 
 .promo__buttons-wrapper {
@@ -134,10 +138,12 @@
 }
 
 .promo__menu-link {
+	&:hover {
+		color: @fc-alt;
+	}
 	color: @fc-surface;
+	transition-duration: 0.3s;
 }
-
-
 
 @media @tablet-width { 
 	.promo {
@@ -154,7 +160,6 @@
 	
 	.promo__logo {
 		font-size: 35px;
-		
 		background-size: 32px;
 		padding: 0;
 		margin: 56px 0 0 60px;
@@ -259,6 +264,73 @@
 		top: -3px;
 		left: 43px;
 	}
+}
+
+@media @desktop-width {
+	.promo {
+		min-height: 960px;
+		background: url("../img/promo-line768.png") 1934px 242px no-repeat, url("../img/background-1920.jpg") 0 0 no-repeat;
+	}
+	
+	.promo__logo {
+		font-size: 35px;
+		background-size: 32px;
+		padding: 0;
+		margin: 56px 0 0 226px;
+	}
+	
+	.promo__description {
+		margin: 56px 270px 0 0;
+	}
+	
+	.promo__wrapper-title {
+		position: relative;
+		&::before {
+			content: '';
+			position: absolute;
+			width: 253px;
+			height: 316px;
+			top: -40px;
+			left: 581px;
+			background: url(../img/promo-line768.png) 0 0 no-repeat;
+		}
+	}
+		
+	.promo__title {
+		font-size: 90px;
+		line-height: 90px;
+	}
+
+	.promo__title.first {
+		margin: 0 0 35px 192px;
+		position: relative;
+		z-index: 3;
+	}
+
+	.promo__title.second {
+		margin: 0 0 30px 650px;
+	}
+	
+	.promo__main-menu {
+		margin: 0 279px 210px 0;
+		margin-right: 279px;	
+	}
+	
+	.promo__menu-list {
+		justify-content: flex-end;
+		font-size: 14px;
+	}
+	
+	.promo__menu-item {
+		margin-right: 55px;
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+	
+	.promo__menu-item.soccer, .promo__menu-item.baseball {
+		margin-right: 55px;
+	} 
 }
 
 

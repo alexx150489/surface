@@ -44,6 +44,9 @@
 }
 
 .footer__button {
+	&:hover {
+		background-color: @hover-surface;
+	}
 	display: block;
 	width: 142px;
 	height: 41px;
@@ -51,6 +54,7 @@
 	border-radius: 26px;
 	padding-top: 1px;
 	margin: 0 5px;
+	transition-duration: 0.3s;
 }
 
 .footer__buttons-wrapper {
@@ -142,6 +146,14 @@
 	background: url(../img/sprite.png) -317px -5px no-repeat;
 }
 
+.footer__social-logo {
+	display: none;
+}
+
+.footer__social-liks {
+	display: none;
+}
+
 @media @tablet-width {
 	.footer__promo {
 		min-height: 959px;
@@ -156,7 +168,7 @@
 		margin: 0 auto;
 		background: @bgc-surface url(../img/surface-logo.svg) 13px 21px no-repeat;
 		background-size: 100px;
-		border-radius: 15px;
+		border-radius: 30px;
 		margin-top: 79px;
 		margin-bottom: 56px;
 	}
@@ -170,7 +182,7 @@
 	.footer__subtitle {
 		font-size: 36px;
 		line-height: 36px;
-		color: #9b8ec1;
+		color: #a496ca;
 		margin-bottom: 199px;
 	}
 	
@@ -185,7 +197,16 @@
 		background-color: @bgc-surface;
 		border-radius: 38px;
 		padding-top: 1px;
-		margin: 0 15px;
+	}
+	
+	.footer__button-apple {
+		margin: 0;
+		margin-right: 15px;
+	}
+	
+	.footer__button-google {
+		margin: 0;
+		margin-left: 15px;
 	}
 
 	.footer__button-text {
@@ -250,4 +271,83 @@
 		background: url(../img/sprite.png) -344px -5px no-repeat;
 	}
 }
+
+@media @desktop-width {
+	.footer__promo {
+		position: relative;
+		min-height: 959px;
+		background: url(../img/footer-line2-768.png) 622px 220px no-repeat,
+			url(../img/footer-line1-768.png)  928px 146px no-repeat,
+			url(../img/background-footer-1920.jpg) 0 0 no-repeat;
+	}
+	
+	.footer__title {
+		font-size: 90px;
+		margin-top: 248px;
+		margin-bottom: 20px;
+	}
+	
+	.footer__logo {
+		position: absolute;
+		top: 247px;
+		left: 441px;
+		margin: 0;
+	}
+	
+	.footer__buttons {
+		margin-bottom: 205px;
+	}
+	
+	.footer__social-logo {
+		font-size: 28px;
+		line-height: 28px;
+		color: #ffffff;
+		text-transform: uppercase;
+		text-align: center;
+		display: block;
+		padding-left: 134px;
+		&::before {
+			position: absolute;
+			content: '';
+			width: 26px;
+			height: 25px;
+			background: url(../img/surface-logo.svg) 0 0 no-repeat;
+			background-size: 26px;
+			left: 307px;
+		}
+	}
+	
+	.footer__list {
+		margin-top: 0;
+	}
+	
+	.footer__social-liks {
+		display: block;
+	}
+	
+	.footer__social {
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+	}
+	
+	.footer__social-liks a, .footer__social-liks span {
+		font-size: 20px;
+		line-height: 20px;
+		font-family: @font;
+		color: #fff;
+	}
+	
+	.footer__social-liks a {
+		&:hover {
+			color: @bgc-surface;
+		}
+		transition-duration: 0.3s;
+	}
+	
+	.footer__social-liks span {
+		margin: 0 5px;
+	}
+}
+	
 
